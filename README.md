@@ -6,11 +6,9 @@
 - 기본 카운터 앱 Chrome에서 정상 실행됨
 - 버튼 클릭 시 숫자 증가 확인
 - "Hello World"를 출력하기
-### "Hello World"를 출력하기 위한 코드
+### Hello World 출력 코드
 
 ```dart
-import 'package:flutter/material.dart';
-
 void main() {
   runApp(MyApp());
 }
@@ -32,6 +30,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
 
 
