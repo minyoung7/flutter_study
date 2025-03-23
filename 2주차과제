@@ -1,25 +1,26 @@
-# Dart 실습 코드 모음
-
----
+# Dart 실습 정리
 
 ## ✅ 실습 1: 구구단 출력하기
+- 반복문(for)을 활용하여 2단부터 9단까지 구구단 출력
 
 ```dart
 void main() {
-  // 구구단 출력 (2단부터 9단까지)
   for (int i = 2; i <= 9; i++) {
     print('$i단');
     for (int j = 1; j <= 9; j++) {
       print('$i × $j = ${i * j}');
     }
-    print(''); // 단 사이 빈 줄 출력
+    print('');
   }
 }
 ```
 
 ---
 
-## ✅ 실습 2: 사각형 출력하기 (테두리 + X자)
+## ✅ 실습 2: 정사각형 테두리 + X자 출력
+- 정사각형의 크기를 기준으로 두 가지 형태 출력  
+  1. 테두리 사각형  
+  2. 대각선 X자 표시
 
 ```dart
 void main() {
@@ -40,7 +41,7 @@ void main() {
 
   print('\n'); // 구분선
 
-  // X 표시 사각형
+  // X자 표시
   for (int i = 0; i < n; i++) {
     String line = '';
     for (int j = 0; j < n; j++) {
@@ -57,31 +58,26 @@ void main() {
 
 ---
 
-## ✅ 실습 3: 날짜 입력 시 요일 출력하기
+## ✅ 실습 3: 날짜 입력 → 요일 출력
+- 문자열로 입력한 날짜를 `DateTime`으로 변환하고 요일 출력
 
 ```dart
 void main() {
-  String input = '2025-03-11';
+  String input = '2025-03-11';  // 날짜 입력
 
-  // 문자열을 DateTime 객체로 변환
-  DateTime date = DateTime.parse(input);
+  DateTime date = DateTime.parse(input); // 문자열 → 날짜 객체
+  int weekday = date.weekday; // 요일 (1~7)
 
-  // 요일 구하기 (1: 월요일 ~ 7: 일요일)
-  int weekday = date.weekday;
-
-  // 한글 요일 배열
   List<String> weekdays = ['월', '화', '수', '목', '금', '토', '일'];
-  int index = weekday - 1;
-
-  // 요일 출력
-  print('입력: $input');
-  print('출력: ${weekdays[index]}');
-
-  // 전체 요일 이름 출력 (선택사항)
   List<String> fullWeekdays = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'];
-  print('출력(전체): ${fullWeekdays[index]}');
+
+  print('입력: $input');
+  print('출력: ${weekdays[weekday - 1]}');
+  print('출력(전체): ${fullWeekdays[weekday - 1]}');
 }
 ```
+
+
 
 
 
