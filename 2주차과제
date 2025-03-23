@@ -1,7 +1,10 @@
-# Dart 실습 정리
+# 📘 Dart 실습 정리
 
-## ✅ 실습 1: 구구단 출력하기
-- 반복문(for)을 활용하여 2단부터 9단까지 구구단 출력
+---
+
+### ✅ 실습 1: 구구단 출력하기
+
+- 반복문(for)을 활용하여 2단부터 9단까지 구구단을 출력하는 예제입니다.
 
 ```dart
 void main() {
@@ -17,9 +20,10 @@ void main() {
 
 ---
 
-## ✅ 실습 2: 정사각형 테두리 + X자 출력
-- 정사각형의 크기를 기준으로 두 가지 형태 출력  
-  1. 테두리 사각형  
+### ✅ 실습 2: 정사각형 테두리 + X자 출력하기
+
+- 입력된 정사각형 크기를 기준으로 두 가지 형태를 출력합니다.
+  1. 테두리 사각형
   2. 대각선 X자 표시
 
 ```dart
@@ -41,7 +45,7 @@ void main() {
 
   print('\n'); // 구분선
 
-  // X자 표시
+  // X자 출력
   for (int i = 0; i < n; i++) {
     String line = '';
     for (int j = 0; j < n; j++) {
@@ -58,15 +62,16 @@ void main() {
 
 ---
 
-## ✅ 실습 3: 날짜 입력 → 요일 출력
-- 문자열로 입력한 날짜를 `DateTime`으로 변환하고 요일 출력
+### ✅ 실습 3: 날짜 입력 시 요일 출력하기
+
+- 문자열 형태로 입력한 날짜를 `DateTime`으로 변환하고, 요일을 출력하는 예제입니다.
 
 ```dart
 void main() {
   String input = '2025-03-11';  // 날짜 입력
 
   DateTime date = DateTime.parse(input); // 문자열 → 날짜 객체
-  int weekday = date.weekday; // 요일 (1~7)
+  int weekday = date.weekday;
 
   List<String> weekdays = ['월', '화', '수', '목', '금', '토', '일'];
   List<String> fullWeekdays = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'];
@@ -76,9 +81,3 @@ void main() {
   print('출력(전체): ${fullWeekdays[weekday - 1]}');
 }
 ```
-
-
-
-
-
-
