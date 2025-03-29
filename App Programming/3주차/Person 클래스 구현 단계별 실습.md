@@ -159,7 +159,7 @@ void main() {
 
 ### 실습 8: 메서드 호출로 나이 증가
 
-addOneYear() 메서드를 호출하여 나이를 증가시킵니다. 출력 결과는 [이민영, 24]와 [이민영, 25]입니다.
+addoneYear() 메서드를 호출하여 나이를 증가시킵니다. 출력 결과는 [이민영, 24]와 [이민영, 25]입니다.
 
 ```dart
 class Person {
@@ -168,7 +168,7 @@ class Person {
 
   Person(this._name, this._age);
 
-  void addOneYear() {
+  void addoneYear() {
     _age++;
   }
 
@@ -180,7 +180,7 @@ void main() {
   var na = Person('이민영', 24);
   print([na.name, na.age]); // [이민영, 24]
 
-  na.addOneYear();
+  na.addoneYear();
   print([na.name, na.age]); // [이민영, 25]
 }
 ```
