@@ -23,9 +23,13 @@ void main() {
   l1.remove(2);
   print(l1);
 
-  print(l1[0]);
-  print(l1.length);
-  print(l1.contains(4));
+  // 나라의 수도를 표현할때
+  var m1 = {'한국' : '서울', '일본': '도교'};
+  print(m1);
+  print(m1['한국']);
+
+  var s1 = {1, 2, 3, 3, 3, 3, 4, 5};
+  print(s1);
 }
 ```
 
