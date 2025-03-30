@@ -27,7 +27,6 @@ void main() {
   var r1 = Rectangle(5, 10, 20, 25);
   print([r1.left, r1.top, r1.width, r1.height]);
   print([r1.width, r1.height]);
-  print(r1.right);
 }
 ```
 
