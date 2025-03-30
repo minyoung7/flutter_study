@@ -28,8 +28,6 @@ void main() {
   print([r1.left, r1.top, r1.width, r1.height]);
   print([r1.width, r1.height]);
   print(r1.right);
-  r1.right = 30;
-  print(r1.left);
 }
 ```
 
@@ -123,10 +121,6 @@ void main() {
     case Status.logout:
       print('로그아웃');
       break;
-  }
-  
-  if (authStatus == Status.logout) {
-    print('로그인이 필요합니다.');
   }
 }
 ```
