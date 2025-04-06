@@ -1,0 +1,408 @@
+# 4주차 실습모음
+
+---
+
+### 실습 1: +2씩 증가하는 카운터 앱
+
+버튼을 누를 때마다 `_counter` 값이 2씩 증가
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const MyHomePage(title: '플러터 데모 홈페이지'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter += 2;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text('You have pushed the button this many times:'),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+```
+
+---
+
+### 실습 2: Text 위젯 3개 출력
+
+`_counter` 값을 세 개의 `Text` 위젯에 각각 출력
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const MyHomePage(title: '플러터 데모 홈페이지'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter += 2;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('You have pushed the button this many times:'),
+            Text('$_counter', style: Theme.of(context).textTheme.headlineMedium),
+            Text('$_counter', style: Theme.of(context).textTheme.headlineMedium),
+            Text('$_counter', style: Theme.of(context).textTheme.headlineMedium),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+```
+
+---
+
+### 실습 3: Text 스타일 다양화 (bodyLarge)
+
+텍스트 스타일을 일부 `bodyLarge`로 변경
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const MyHomePage(title: '플러터 데모 홈페이지'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter += 2;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('You have pushed the button this many times:'),
+            Text('$_counter', style: Theme.of(context).textTheme.bodyLarge),
+            Text('$_counter', style: Theme.of(context).textTheme.headlineMedium),
+            Text('$_counter', style: Theme.of(context).textTheme.headlineMedium),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+```
+
+---
+
+### 실습 4: Hello World AppBar 및 본문
+
+AppBar 제목을 "Hello World AppBar", 본문 텍스트를 "Hello World Body"로 설정
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Hello World AppBar'),
+      ),
+      body: Text(
+        'Hello World Body',
+        style: TextStyle(fontSize: 40),
+      ),
+    );
+  }
+}
+```
+
+---
+
+### 실습 5: if-else 구문을 활용한 텍스트 전환
+
+버튼 클릭 시 `"Hello"` 와 `"World"`가 번갈아 출력되도록 구현
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+
+  @override
+  State createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State {
+  var _text = 'Hello';
+  var _isToogled = false;
+
+  void _incrementCounter() {
+    setState(() {
+      if (_text == 'Hello') {
+        _text = 'World';
+      } else {
+        _text = 'Hello';
+      }
+      _isToogled = !_isToogled;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text('Hello World'),
+      ),
+      body: Text(
+        _text,
+        style: TextStyle(fontSize: 40),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.touch_app),
+      ),
+    );
+  }
+}
+```
+
+---
+
+### 실습 6: 삼항 연산자를 활용한 텍스트 전환
+
+삼항 연산자(`? :`)를 사용하여 같은 기능을 더 간결하게 표현
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+  final String title;
+
+  @override
+  State createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State {
+  var _text = 'Hello';
+  var _isToogled = false;
+
+  void _incrementCounter() {
+    setState(() {
+      _text = _isToogled ? 'Hello' : 'World';
+      _isToogled = !_isToogled;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text('Hello World'),
+      ),
+      body: Text(
+        _text,
+        style: TextStyle(fontSize: 40),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.touch_app),
+      ),
+    );
+  }
+}
+```
+
+---
+
