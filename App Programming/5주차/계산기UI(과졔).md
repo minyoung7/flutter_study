@@ -6,18 +6,13 @@
 
 - Flutter로 만든 계산기 UI
 - Windows 계산기 스타일과 유사한 레이아웃
-- 숫자, 연산자, 메모리 버튼 포함숫자/연산자/메모리 기능 버튼을 모두 포함
+- 숫자, 연산자, 메모리 버튼 포함
 
 ---
 
 ## 전체 코드
 
 ```dart
-
-// 아래는 실행 화면입니다:
-
----
-
 
 import 'package:flutter/material.dart';
 
@@ -139,5 +134,10 @@ class CalculatorUI extends StatelessWidget {
 
 ---
 
-[계산기 UI 이미지 보기](App%20Programming/5%EC%A3%BC%EC%B0%A8/%EA%B3%84%EC%82%B0%EA%B8%B0UI.JPG)
+## 실행 결과
+
+![실행 결과 화면](./실행결과.JPG)
+
+
+---
 
