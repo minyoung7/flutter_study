@@ -1,6 +1,6 @@
 # Today I Learned (TIL)
 
-## App Programming
+## App Programming , python
 
 #### 1주차
 - [1주차 과제](../main/1주차%20과제.md)
