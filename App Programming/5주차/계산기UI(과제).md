@@ -51,7 +51,7 @@ class CalculatorUI extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('계산기'),
+        title: const Text('표준'),
         leading: const Icon(Icons.menu),
         actions: const [Icon(Icons.history)],
       ),
