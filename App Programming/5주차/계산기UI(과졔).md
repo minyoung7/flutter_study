@@ -136,7 +136,7 @@ class CalculatorUI extends StatelessWidget {
 
 ## 실행 결과
 
-![실행 결과 화면](./실행결과.JPG)
+![실행 결과 화면](./계산기UI.JPG)
 
 
 ---
