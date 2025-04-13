@@ -19,6 +19,6 @@
 
 #### 5주차
 - [5주차 실습모음](../main/App%20Programming/5주차/5주차%20실습모음.md)
-- [계산기UI(과제)](./App%20Programming/5주차%20계산기UI(과제).md)
+- [계산기UI(과제)](../main/App%20Programming/5주차/계산기UI(과제).md)
 
 
