@@ -18,9 +18,6 @@
 
 ---
 
-## 실행 화면
-
-![계산기 UI](계산기UI.JPG)
 
 import 'package:flutter/material.dart';
 
@@ -142,5 +139,5 @@ class CalculatorUI extends StatelessWidget {
 
 ---
 
-![계산기 UI 이미지 보기](./계산기UI.JPG)  
+[계산기 UI 이미지 보기](App%20Programming/5%EC%A3%BC%EC%B0%A8/%EA%B3%84%EC%82%B0%EA%B8%B0UI.JPG)
 
