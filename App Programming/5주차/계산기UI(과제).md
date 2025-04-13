@@ -4,7 +4,10 @@
 
 ## 앱 설명
 
-- Flutter로 만든 계산기 UI
+- 기본 위젯을 활용한 계산기 UI 구현
+- AppBar 위젯으로 상단 네비게이션 구현
+- Text 위젯을 활용한 계산기 디스플레이
+- Container, SizedBox, Expanded 위젯으로 레이아웃 구성
 - Windows 계산기 스타일과 유사한 레이아웃
 - 숫자, 연산자, 메모리 버튼 포함
 
@@ -48,7 +51,7 @@ class CalculatorUI extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('표준'),
+        title: const Text('계산기'),
         leading: const Icon(Icons.menu),
         actions: const [Icon(Icons.history)],
       ),
