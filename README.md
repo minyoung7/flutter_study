@@ -1,6 +1,6 @@
 # Today I Learned (TIL)
 
-## App Programming , python          (*1,2주차 파이썬코드는 상단중복폴더에 있습니다.)
+## App Programming , python(6주차까지만)          (*1,2주차 파이썬코드는 상단중복폴더에 있습니다.)
 
 #### 1주차
 - [1주차 과제](../main/1주차%20과제.md)
