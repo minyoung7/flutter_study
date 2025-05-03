@@ -27,6 +27,6 @@
 - [후위표기법 계산기 구현(파이썬)](../main/App%20Programming/6주차/후위표기법%20계산기%20구현(파이썬).md)
 
 #### 7주차
-
+- [test](../main/App%20Programming/7주차/test.md)
 #### 8주차
 
