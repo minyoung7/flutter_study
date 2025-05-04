@@ -152,9 +152,9 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 ---
 
-### 실습 3: 복잡한 UI 화면 (상단 AppBar와 하단 네비게이션 바)
+### 실습 3: 복잡한 UI 및 BottomNavigationBar 활용
 
-이 예제에서는 하단 네비게이션 바와 상태 관리를 사용하여 기본적인 페이지 전환을 구현하는 예제입니다. 사용자는 하단 메뉴를 통해 페이지를 전환할 수 있으며, 각 페이지의 인덱스 값에 따라 화면을 구성.
+이 예제에서는 BottomNavigationBar를 사용하여 하단에 3개의 탭을 만들고, 각각의 탭에 따라 화면을 변경하는 기능을 구현한 코드. Navigator.push()와 Navigator.pop()을 사용하여 화면 전환을 관리하고 각 페이지에서 발생하는 생명주기를 확인할 수 있다.
 
 ```dart
 import 'package:flutter/material.dart';
