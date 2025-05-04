@@ -172,16 +172,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: const MyHomePage(title: '플러터 데모 홈페이지'),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -194,33 +193,31 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text('복잡한 UI'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('버튼을 누르면 1씩 증가할거야:'),
-            Text(
-              '$_index 페이지',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+        child: Text(
+          '$_index 페이지',
+          style: TextStyle(fontSize: 40),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
+      ), // Center
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _index,
+        items: [
+          BottomNavigationBarItem(label: '홈', icon: Icon(Icons.home)),
+          BottomNavigationBarItem(label: '이용서비스', icon: Icon(Icons.assignment)),
+          BottomNavigationBarItem(label: '내 정보', icon: Icon(Icons.account_circle)),
+        ],
+        onTap: (index) {
           setState(() {
-            _index++;
+            _index = index;
           });
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add, size: 30),
-      ),
-    );
+      ), // BottomNavigationBar
+    ); // Scaffold
   }
 }
+
 
 
 ```
