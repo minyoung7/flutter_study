@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ### 실습 2: _incSize 만큼 증가하는 카운터
 
-이 예제에서는 카운터가 5씩 증가하도록 설정한 코드. _incSize를 통해 증가할 값을 설정하고, 버튼 클릭 시마다 그 값만큼 증가하는 방식.
+이 예제에서는 카운터가 5씩 증가하도록 설정한 코드로 _incSize를 통해 증가할 값을 설정하고, 버튼 클릭 시마다 그 값만큼 증가하는 방식.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -152,11 +152,76 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 ---
 
-### 실습 3: 
+### 실습 3: 복잡한 UI 화면 (상단 AppBar와 하단 네비게이션 바)
 
-
+이 예제에서는 하단 네비게이션 바와 상태 관리를 사용하여 기본적인 페이지 전환을 구현하는 예제입니다. 사용자는 하단 메뉴를 통해 페이지를 전환할 수 있으며, 각 페이지의 인덱스 값에 따라 화면을 구성.
 
 ```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
+      home: const MyHomePage(title: '플러터 데모 홈페이지'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  var _index = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text('버튼을 누르면 1씩 증가할거야:'),
+            Text(
+              '$_index 페이지',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            _index++;
+          });
+        },
+        tooltip: 'Increment',
+        child: const Icon(Icons.add, size: 30),
+      ),
+    );
+  }
+}
+
 
 ```
 ---
