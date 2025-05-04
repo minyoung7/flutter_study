@@ -29,7 +29,7 @@
 
 #### 7주차
 - [7주차 실습모음(앱)](../main/App%20Programming/7주차/7주차%20실습모음(앱).md)
-- [값(데이터)과 값을 화면에 표현하는 로직을 구분하여 구현하는 것이 왜 중요한가?(앱과제)](../main/App%20Programming/7주차/%EA%B0%92%28%EB%8D%B0%EC%9D%B4%ED%84%B0%29%EA%B3%BC%20%EA%B0%92%EC%9D%84%20%ED%99%94%EB%A9%B4%EC%97%90%20%ED%91%9C%ED%98%84%ED%95%98%EB%8A%94%20%EB%A1%9C%EC%A7%81%EC%9D%84%20%EA%B5%AC%EB%B6%84%ED%95%98%EC%97%AC%20%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%B4%20%EC%99%9C%20%EC%A4%91%EC%9A%94%ED%95%9C%EA%B0%80%28%EC%95%B1%EA%B3%BC%EC%A0%9C%29.md)
+- [7주차과제(앱과제)](../main/App%20Programming/7주차/7주차과제(앱).md)
 
 
 
