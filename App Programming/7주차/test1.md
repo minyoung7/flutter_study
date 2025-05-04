@@ -4,7 +4,7 @@
 
 ### 실습 1: 1씩 증가하는 카운터
 
-이 예제에서는 버튼을 누를 때마다 **1씩 증가**하는 카운터를 구현, 이 코드에서는 `_counter` 값을 1씩 증가시키는 방식으로 동작.
+이 예제에서는 버튼을 누를 때마다 1씩 증가하는 카운터를 구현합니다. 이 코드에서는 _counter 값을 1씩 증가시키는 방식으로 동작합니다.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -73,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 ```
 
 ---
@@ -149,12 +150,13 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 ```
 ---
 
-### 실습 3: 복잡한 UI 및 BottomNavigationBar 활용
+### 실습 3: 복잡한 UI - 하단 네비게이션 바
 
-이 예제에서는 BottomNavigationBar를 사용하여 하단에 3개의 탭을 만들고, 각각의 탭에 따라 화면을 변경하는 기능을 구현한 코드. Navigator.push()와 Navigator.pop()을 사용하여 화면 전환을 관리하고 각 페이지에서 발생하는 생명주기를 확인할 수 있다.
+이 예제에서는 BottomNavigationBar를 사용하여 화면을 전환하는 방법을보여주며, _index를 통해 현재 화면을 관리하고, 하단 네비게이션 바를 클릭할 때마다 화면을 변경한다.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -220,12 +222,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
+
 ```
 ---
 
-### 실습 4: 복잡한 UI와 Bottom Navigation
+### 실습 4: 하단 네비게이션 바에 debugShowCheckedModeBanner: false 추가
 
-이 예제는 복잡한 UI를 만들고, Bottom Navigation을 추가하는 방법, 앱의 하단에 3개의 메뉴가 있는 네비게이션 바를 구현.
+이 예제는 debugShowCheckedModeBanner: false를 설정하여 디버그 배너를 숨김. 하단 네비게이션 바를 이용하여 화면을 전환하고, 앱을 좀 더 깔끔하게 설정한다.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -296,6 +299,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 ```
 
 
