@@ -1,4 +1,4 @@
-# Today I Learned (TIL)
+# Today I Learned      (TIL) 총-레파지토리(4개)
 
 ## App Programming , python(1,2,5,6주차에 섞여있음_각1개씩)          (*1,2주차 파이썬코드는 상단중복폴더에 있습니다.)
 
