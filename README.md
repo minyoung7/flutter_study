@@ -32,20 +32,20 @@
 - [데이터와 화면 로직 구분하는 이유(앱과제)](../main/App%20Programming/7주차/데이터와%20화면%20로직%20구분.md)
                                                                                                                                               
 #### 9주차
-- [9주차-프로젝트 계획서(pptx)](../main/App%20Programming/9주차/9주차%20프로젝트%20계획서%20.pptx)
+- [9주차-프로젝트 계획서(ppt)](../main/App%20Programming/9주차/9주차%20프로젝트%20계획서%20.pptx)
 
 
 #### 10주차
-- [10주차-프로젝트(pptx)](../main/App%20Programming/10주차/10주차%20프로젝트.pptx)
+- [10주차-프로젝트(ppt)](../main/App%20Programming/10주차/10주차%20프로젝트.pptx)
 
 #### 11주차
 - [11주차-프로젝트(최신버전)](../main/App%20Programming/10주차/10주차%20프로젝트(최신).pptx) , [리비전1](../main/App%20Programming/10주차/리비전1.md)
 
 #### 12주차
-- [12주차-프로젝트(pptx)](../main/App%20Programming/12주차/12주차%20프로젝트.pptx) ,
+- [12주차-프로젝트(ppt)](../main/App%20Programming/12주차/12주차%20프로젝트.pptx) ,
 
 #### 13주차
-- [13주차-프로젝트(pptx)](../main/App%20Programming/13주차/13주차%20프로젝트.pptx)
+- [13주차-프로젝트(ppt)](../main/App%20Programming/13주차/13주차%20프로젝트.pptx)
 
 
 
