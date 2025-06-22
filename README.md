@@ -47,6 +47,8 @@
 #### 13주차
 - [13주차-프로젝트(ppt)](../main/App%20Programming/13주차/13주차%20프로젝트.pptx)
 
+#### 14주차
+- [14주차-프로젝트(ppt)](../main/App%20Programming/14주차/14주차%20프로젝트.pptx) , [리비전2](../main/App%20Programming/14주차/리비전2.md)
 
 
 
